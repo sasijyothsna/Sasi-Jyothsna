@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="form_style.css">
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .wrapper {
+        width: 100%;
+      }
+      .carousel {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 30px;
+      }
+      .carousel .card {
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 250px;
+        font-size: 90px;
+        font-weight: 600;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .owl-dots {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .owl-dot {
+        height: 15px;
+        width: 45px;
+        margin: 0 5px;
+        outline: none;
+        border-radius: 14px;
+        border: 2px solid #0072bc !important;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      .owl-dot.active,
+      .owl-dot:hover {
+        background: #0072bc !important;
+      }
+      .card__img {
+        margin-bottom: 2rem;
+      }
+      .card__name,
+      .card__story {
+        margin-bottom: 1rem;
+      }
+      .card__right {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="carousel owl-carousel" id="crd"></div>
+    </div>
+    <script>
+      let userArr = [
+        {
+          id: 1,
+          name: "Atul Gaurav",
+          email: "atul.gaurav@gmail.com",
+          story:
+            "I love tricon associate program and I am very much happy with the onboarding process",
+          phoneNo: 7209221716,
+        },
+        {
+          id: 2,
+          name: "Ramesh Kashyap",
+          email: "ramesh.kashyap@gmail.com",
+          story: "I love tricon associate program.",
+          phoneNo: 8873193200,
+        },
+        {
+          id: 6,
+          name: "Ram Kumar",
+          email: "ram.kumar@gmail.com",
+          story: "I love tricon associate program.",
+          phoneNo: 8873193200,
+        },
+        {
+          id: 7,
+          name: "Jimmy",
+          email: "jimmy@gmail.com",
+          story: "I am excited to be working with Tricon",
+          phoneNo: 999999999,
+        },
+        {
+          id: 8,
+          name: "Sasi",
+          email: "sasi@gmail.com",
+          story: "I am an asssociate s/f engineer",
+          phoneNo: 999999989,
+        },
+        {
+          id: 1,
+          name: "Atul Gaurav",
+          email: "atul.gaurav@gmail.com",
+          story:
+            "I love tricon associate program and I am very much happy with the onboarding process",
+          phoneNo: 7209221716,
+        },
+        {
+          id: 2,
+          name: "Ramesh Kashyap",
+          email: "ramesh.kashyap@gmail.com",
+          story: "I love tricon associate program.",
+          phoneNo: 8873193200,
+        },
+        {
+          id: 6,
+          name: "Ram Kumar",
+          email: "ram.kumar@gmail.com",
+          story: "I love tricon associate program.",
+          phoneNo: 8873193200,
+        },
+        {
+          id: 7,
+          name: "Jimmy",
+          email: "jimmy@gmail.com",
+          story: "I am excited to be working with Tricon",
+          phoneNo: 999999999,
+        },
+        {
+          id: 8,
+          name: "Sasi",
+          email: "sasi@gmail.com",
+          story: "I am an asssociate s/f engineer",
+          phoneNo: 999999989,
+        },
+      ];
+      function showContent() {
+        for (i = 0; i < userArr.length; i++) {
+          var html = '<div class="card card-1">';
+          html = '<div class="card__right">';
+          const user = userArr[i];
+          html += '<img src="./male.jpeg" alt="img" class="card__img"/>';
+          html += "<p class='card__name'>" + user.name + "</p>";
+          html += "<p class='card__story'>" + user.story + "</p>";
+          html += "<p>" + user.email + "</p>";
+          html += "<p>" + user.phoneNo + "</p>";
+          html += "</div>";
+          html += "</div>";
+          $("#crd").append(html);
+        }
+      }
+      showContent();
+    </script>
+    <script>      $(".carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 2,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: false,
+          },
+        },
+      });
+    </script>
+
+    <div id="publish">
+      <button id="publish_button"><a href="stories.html">Publish</a>></button>
+      </div>>
+  </body>
+</html>

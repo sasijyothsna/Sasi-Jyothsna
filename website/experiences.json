@@ -1,0 +1,37 @@
+[
+    {
+    "id": 1,
+    "name": "Atul Gaurav",
+    "email": "atul.gaurav@gmail.com",
+    "story": "I love tricon associate program and I am very much happy with the onboarding process",
+    "phoneNo": 7209221716
+    },
+    {
+    "id": 2,
+    "name": "Ramesh Kashyap",
+    "email": "ramesh.kashyap@gmail.com",
+    "story": "I love tricon associate program.",
+    "phoneNo": 8873193200
+    },
+    {
+    "id": 6,
+    "name": "Ram Kumar",
+    "email": "ram.kumar@gmail.com",
+    "story": "I love tricon associate program.",
+    "phoneNo": 8873193200
+    },
+    {
+    "id": 7,
+    "name": "Jimmy",
+    "email": "jimmy@gmail.com",
+    "story": "I am excited to be working with Tricon",
+    "phoneNo": 999999999
+    },
+    {
+    "id": 8,
+    "name": "Sasi",
+    "email": "sasi@gmail.com",
+    "story": "I am an asssociate s/f engineer",
+    "phoneNo": 999999989
+    }
+]
